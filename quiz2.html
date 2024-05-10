@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="/style.css" />
     <style>
       .pads {
-        justify-content: flex-end;
+        justify-content: center;
       }
     </style>
   </head>
@@ -20,11 +20,11 @@
     <header class="header">
       <h1 class="logo">FLEXBOX FROGGY</h1>
       <div class="counter">
-        <span class="counter-left hover-class disable">
+        <span class="counter-left hover-class">
           <span class="counter-left-arrow"></span>
         </span>
         <span class="counter-centre hover-class">
-          <span class="counter-centre-plate">Level 1 of 24</span>
+          <span class="counter-centre-plate">Level 2 of 24</span>
           <span class="counter-centre-arrow">
             <span class="counter-down-arrow"></span>
           </span>
@@ -67,15 +67,14 @@
       <section class="left">
         <div class="instructions">
           <p class="text">
-            Welcome to Flexbox Froggy, a game where you help Froggy and friends
-            by writing CSS code! Guide this frog to the lilypad on the right by
-            using the
+            Use
             <code
               class="coding-instructions modal-code hover-class"
               style="border-bottom: 1px solid rgba(255, 255, 255, 0.8)"
               >justify-content</code
             >
-            property, which aligns items horizontally and accepts the following
+            again to help these frogs get to their lilypads. Remember that this
+            CSS property aligns items horizontally and accepts the following
             values:
           </p>
           <ul>
@@ -100,11 +99,6 @@
               display with equal spacing around them.
             </li>
           </ul>
-          <p class="text">
-            For example,
-            <code class="coding-instructions">justify-content: flex-end;</code>
-            will move the frog to the right.
-          </p>
           <div class="modal-help modal-help-justify-content">
             <p class="text">Aligns flex items along the main axis. <br /></p>
             <code class="coding-instructions">flex-start (default)</code>
@@ -177,9 +171,15 @@
             <div class="frog-container green-frog">
               <div class="frog frog-animation"></div>
             </div>
+            <div class="frog-container yellow-frog">
+              <div class="frog frog-animation"></div>
+            </div>
           </div>
           <div class="pads">
             <div class="pad-container green-pad">
+              <div class="pad"></div>
+            </div>
+            <div class="pad-container yellow-pad">
               <div class="pad"></div>
             </div>
           </div>
@@ -187,12 +187,12 @@
       </section>
     </main>
     <script>
-      const pageNumber = 1;
+      const pageNumber = 2;
       const greenPresent = true;
-      const yellowPresent = false;
+      const yellowPresent = true;
       const redPresent = false;
       const order = false;
     </script>
-    <script src="/style.css"></script>
+    <script src="/script.js"></script>
   </body>
 </html>

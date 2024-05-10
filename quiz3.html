@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="/style.css" />
     <style>
       .pads {
-        justify-content: flex-end;
+        justify-content: space-around;
       }
     </style>
   </head>
@@ -20,11 +20,11 @@
     <header class="header">
       <h1 class="logo">FLEXBOX FROGGY</h1>
       <div class="counter">
-        <span class="counter-left hover-class disable">
+        <span class="counter-left hover-class">
           <span class="counter-left-arrow"></span>
         </span>
         <span class="counter-centre hover-class">
-          <span class="counter-centre-plate">Level 1 of 24</span>
+          <span class="counter-centre-plate">Level 3 of 24</span>
           <span class="counter-centre-arrow">
             <span class="counter-down-arrow"></span>
           </span>
@@ -67,43 +67,23 @@
       <section class="left">
         <div class="instructions">
           <p class="text">
-            Welcome to Flexbox Froggy, a game where you help Froggy and friends
-            by writing CSS code! Guide this frog to the lilypad on the right by
-            using the
+            Help all three frogs find their lilypads just by using
             <code
               class="coding-instructions modal-code hover-class"
               style="border-bottom: 1px solid rgba(255, 255, 255, 0.8)"
               >justify-content</code
             >
-            property, which aligns items horizontally and accepts the following
-            values:
+            . This time, the lilypads have lots of space all around them.
           </p>
-          <ul>
-            <li>
-              <code class="coding-instructions">flex-start</code>: Items align
-              to the left side of the container.
-            </li>
-            <li>
-              <code class="coding-instructions">flex-end</code>: Items align to
-              the right side of the container.
-            </li>
-            <li>
-              <code class="coding-instructions">center</code>: Items align at
-              the center of the container.
-            </li>
-            <li>
-              <code class="coding-instructions">space-between</code>: Items
-              display with equal spacing between them.
-            </li>
-            <li>
-              <code class="coding-instructions">space-around</code>: Items
-              display with equal spacing around them.
-            </li>
-          </ul>
           <p class="text">
-            For example,
-            <code class="coding-instructions">justify-content: flex-end;</code>
-            will move the frog to the right.
+            If you find yourself forgetting the possible values for a property,
+            you can click on the property name to view them. Try clicking on
+            <code
+              class="coding-instructions modal-code hover-class"
+              style="border-bottom: 1px solid rgba(255, 255, 255, 0.8)"
+              >justify-content</code
+            >
+            .
           </p>
           <div class="modal-help modal-help-justify-content">
             <p class="text">Aligns flex items along the main axis. <br /></p>
@@ -177,9 +157,21 @@
             <div class="frog-container green-frog">
               <div class="frog frog-animation"></div>
             </div>
+            <div class="frog-container yellow-frog">
+              <div class="frog frog-animation"></div>
+            </div>
+            <div class="frog-container red-frog">
+              <div class="frog frog-animation"></div>
+            </div>
           </div>
           <div class="pads">
             <div class="pad-container green-pad">
+              <div class="pad"></div>
+            </div>
+            <div class="pad-container yellow-pad">
+              <div class="pad"></div>
+            </div>
+            <div class="pad-container red-pad">
               <div class="pad"></div>
             </div>
           </div>
@@ -187,12 +179,12 @@
       </section>
     </main>
     <script>
-      const pageNumber = 1;
+      const pageNumber = 3;
       const greenPresent = true;
-      const yellowPresent = false;
-      const redPresent = false;
+      const yellowPresent = true;
+      const redPresent = true;
       const order = false;
     </script>
-    <script src="/style.css"></script>
+    <script src="script.js"></script>
   </body>
 </html>
